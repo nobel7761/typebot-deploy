@@ -10,7 +10,7 @@ type GiphySearchProps = {
   onSubmit: (url: string) => void
 }
 
-const giphyFetch = new GiphyFetch(env('GIPHY_API_KEY') as string)
+const giphyFetch = new GiphyFetch(process.env.NEXT_PUBLIC_GIPHY_API_KEY as string)
 
 export const GiphySearch = ({ onSubmit }: GiphySearchProps) => {
   const { fetchGifs, searchKey, setSearch } = useContext(SearchContext)
