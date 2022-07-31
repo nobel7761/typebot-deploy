@@ -22,7 +22,7 @@ export const StandardReactDiv = ({
     parseContainerSnippet({
       url: `${
         isEmpty(env('VIEWER_INTERNAL_URL'))
-          ? env('VIEWER_URL')
+          ? process.env.NEXT_PUBLIC_VIEWER_URL
           : env('VIEWER_INTERNAL_URL')
       }/${typebot?.publicId}`,
       heightLabel,
