@@ -59,7 +59,7 @@ export const ShareContent = () => {
           </Heading>
           {typebot && (
             <EditableUrl
-              hostname={process.env.NEXT_PUBLIC_VIEWER_URL ?? 'https://viewer.bitcoinnano.org'}
+              hostname={process.env.NEXT_PUBLIC_VIEWER_URL ?? 'https://typebot.io'}
               pathname={publicId}
               onPathnameChange={handlePublicIdChange}
             />
